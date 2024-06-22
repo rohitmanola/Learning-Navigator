@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: learning-navigator
+  datasource:
+    url: jdbc:mysql://localhost:3306/learning_navigator?createDatabaseIfNotExist=true
+    username: root
+    password: Shreyas@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+    database-platform: org.hibernate.dialect.MySQL8Dialect
